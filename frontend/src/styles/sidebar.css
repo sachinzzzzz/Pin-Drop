@@ -31,6 +31,12 @@
     gap: 15px;
   }
   
+  @media (max-width: 600px) {
+    .pin-list {
+      margin-left: 3rem;
+      margin-top: 0.5rem; 
+    }
+  }
  
   .pin-item {
     padding: 15px;
@@ -40,3 +46,45 @@
     transition: background-color 0.3s;
     cursor: pointer;
   }
+
+  .pin-list {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+  }
+  
+  .pin-item {
+    margin-bottom: 1rem;
+    margin-right: 10px;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    max-width: 300px; 
+    overflow-wrap: break-word; 
+  }
+  
+  .pin-item p {
+    max-width: 100%;
+    white-space: normal; 
+    word-wrap: break-word; 
+  }
+
+  .popup-form {
+    background-color: #1F2933;
+    color: #E0E0E0;
+    backdrop-filter: blur(10px); 
+    border: 0; 
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); 
+    padding: 10px;
+    border-radius: 16px; 
+}
+
+.mapboxgl-popup-content{
+    background: #1F2933;
+}
+
+.mapboxgl-popup-close-button {
+  color: red; 
+}
+
+

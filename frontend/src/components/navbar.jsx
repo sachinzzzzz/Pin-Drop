@@ -1,4 +1,4 @@
-import {useState} from 'react';
+import { useState } from 'react';
 import BottomNavigation from '@mui/material/BottomNavigation';
 import BottomNavigationAction from '@mui/material/BottomNavigationAction';
 import InfoIcon from '@mui/icons-material/Info';
@@ -8,7 +8,7 @@ import PinDropIcon from '@mui/icons-material/PinDrop';
 import { styled } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography'
-import {Link} from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
 import Popup from '../utils/popup';
 
@@ -29,19 +29,19 @@ export default function LabelBottomNavigation() {
   const navigate = useNavigate();
 
   return (
-    <CustomBottomNavigation sx={{ width: '100%' }} value={value} onChange={handleChange}>
-      
-        <Link to="/">
-      <Box sx={{ display: 'flex', alignItems: 'center', color: '#d62237' }}>
-        <PinDropIcon sx={{ fontSize: 40, mr: 1 }} /> {/* Increased font size */}
-        <Typography variant="h6" component="span" sx={{ color: 'white', fontWeight: 'bold' }}>
-          Pin-Drop
-        </Typography>
-      </Box>
+    <CustomBottomNavigation position="fixed" sx={{ width: '100%', zIndex: 1300 }} value={value} onChange={handleChange}>
+
+      <Link to="/">
+        <Box sx={{ display: 'flex', alignItems: 'center', color: '#d62237' }}>
+          <PinDropIcon sx={{ fontSize: 40, mr: 1 }} /> {/* Increased font size */}
+          <Typography variant="h6" component="span" sx={{ color: 'white', fontWeight: 'bold' }}>
+            Pin-Drop
+          </Typography>
+        </Box>
       </Link>
 
-      
-     
+
+
       <BottomNavigationAction
         label="Map"
         value="map"
@@ -50,17 +50,17 @@ export default function LabelBottomNavigation() {
         onClick={() => navigate('/')}
       />
       <Popup>
+        <BottomNavigationAction
+          label="Recents"
+          value="recents"
+          icon={<HelpIcon />}
+          sx={{ color: 'white' }}
+        />
+      </Popup>
       <BottomNavigationAction
-        label="Recents"
-        value="recents"
-        icon={<HelpIcon />}
-        sx={{ color: 'white' }}
-      />
-      </Popup>      
-      <BottomNavigationAction 
-        label="Folder" 
-        value="folder" 
-        icon={<InfoIcon />} 
+        label="About"
+        value="about"
+        icon={<InfoIcon />}
         sx={{ color: 'white' }}
         onClick={() => navigate('/about')}
       />
