@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    color: #E0E0E0;
+  }
+
+  
+    h4{
+    text-decoration: underline;
+    color: #787a80;
+  }
+  
+  /* Sidebar title */
+  .sidebar h3 {
+    color: #4A90E2;
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+    text-align: center;
+  }
+  
+  /* List styling */
+  .pin-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  /* Individual pin card styling */
+  .pin-item {
+    padding: 15px;
+    background-color: #2A3A47;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
