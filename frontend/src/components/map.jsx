@@ -117,8 +117,8 @@ function Map() {
               anchor="left"
             >
               <div>
-                <strong>{showPopup.title}</strong>
-                <p>{showPopup.remark}</p>
+                <strong><p>Location:</p>{showPopup.title}</strong>
+                <p><p>Remark:</p>{showPopup.remark}</p>
               </div>
             </Popup>
           )}
@@ -135,7 +135,7 @@ function Map() {
             >
               <div className="popup-form">
                 <form onSubmit={handleFormSubmit}>
-                  <label>Place:</label>
+                  <label>Location:</label>
                   <p>{newPin.title}</p>
                   <label>Remark:</label>
                   <textarea
