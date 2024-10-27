@@ -11,7 +11,6 @@ function Popup({ children }) {
     <PopupState variant="popper" popupId="recents-popup-popper">
       {(popupState) => (
         <>
-          {/* Clone child element to add toggle functionality */}
           {React.cloneElement(children, { ...bindToggle(popupState) })}
 
           <Popper {...bindPopper(popupState)} transition>

@@ -30,7 +30,7 @@ export default function LabelBottomNavigation() {
 
   return (
     <CustomBottomNavigation sx={{ width: '100%' }} value={value} onChange={handleChange}>
-      {/* Logo Section */}
+      
         <Link to="/">
       <Box sx={{ display: 'flex', alignItems: 'center', color: '#d62237' }}>
         <PinDropIcon sx={{ fontSize: 40, mr: 1 }} /> {/* Increased font size */}
@@ -40,7 +40,7 @@ export default function LabelBottomNavigation() {
       </Box>
       </Link>
 
-      {/* Navigation Items */}
+      
      
       <BottomNavigationAction
         label="Map"

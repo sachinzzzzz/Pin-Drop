@@ -2,7 +2,7 @@
     display: flex;
   }
   
-  /* Sidebar styling */
+ 
   .sidebar {
     color: #E0E0E0;
   }
@@ -13,7 +13,7 @@
     color: #787a80;
   }
   
-  /* Sidebar title */
+ 
   .sidebar h3 {
     color: #4A90E2;
     margin-bottom: 20px;
@@ -21,7 +21,7 @@
     text-align: center;
   }
   
-  /* List styling */
+ 
   .pin-list {
     list-style-type: none;
     padding: 0;
@@ -31,7 +31,7 @@
     gap: 15px;
   }
   
-  /* Individual pin card styling */
+ 
   .pin-item {
     padding: 15px;
     background-color: #2A3A47;

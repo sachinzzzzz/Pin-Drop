@@ -18,8 +18,8 @@ function Map(){
         { id: 1, longitude: 78.042068, latitude: 27.173891, title: 'Taj Mahal', remark: 'An iconic monument' },
       ]);
     
-      const [showPopup, setShowPopup] = useState(null); // For displaying existing marker popups
-      const [newPin, setNewPin] = useState(null); // For new marker form popup
+      const [showPopup, setShowPopup] = useState(null); 
+      const [newPin, setNewPin] = useState(null); 
     
       const handleMapClick = async (evt) => {
         const { lng, lat } = evt.lngLat;
@@ -68,7 +68,7 @@ function Map(){
     return(
         <div>
             <div className="container" style={{ display: 'flex' }}>
-        {/* Sidebar for listing pins */}
+        
         <div className="sidebar" style={{ width: '20%', padding: '10px', background: '#1F2933' }}>
           <h3>Saved Pins</h3>
           <ul className="pin-list">
@@ -89,7 +89,7 @@ function Map(){
           </ul>
         </div>
 
-        {/* Map component */}
+        
         <ReactMapGL
           {...viewport}
           mapboxAccessToken="pk.eyJ1IjoiZGV2dXp1bWFraTIiLCJhIjoiY20ycWJqdGh0MHExeDJrczgzanJtNW5xbyJ9.k8q9i2ZlXswL7NhkEms3yg"
@@ -109,7 +109,7 @@ function Map(){
             </Marker>
           ))}
 
-          {/* Popup for the selected marker in the sidebar */}
+          
           {showPopup && (
             <Popup
               latitude={showPopup.latitude}
@@ -126,7 +126,7 @@ function Map(){
             </Popup>
           )}
 
-          {/* Popup form for adding new pin details */}
+          
           {newPin && (
             <Popup
               latitude={newPin.latitude}
@@ -147,7 +147,7 @@ function Map(){
                     onChange={handleInputChange}
                     required
                   />
-                  {/* <button type="submit">Add Pin</button> */}
+                  
                   <Button  type="submit" variant="contained" color="success">
                       App Pin
                   </Button>
@@ -156,7 +156,7 @@ function Map(){
             </Popup>
           )}
 
-          {/* Temporary marker icon on map click */}
+          
           {newPin && (
             <Marker
               longitude={newPin.longitude}

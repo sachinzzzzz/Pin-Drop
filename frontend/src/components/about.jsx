@@ -1,8 +1,15 @@
 import '../styles/about.css'
+import { Typography,styled } from '@mui/material';
+
 
 function About(){
+
+    const Test = styled(Typography)`
+    height:100vh;
+    `
+
     return (
-        <div className="about-sec">
+        <Test className="about-sec">
             Hello World!
             <p>
                 Developer: Sachin Munda.
@@ -12,7 +19,7 @@ function About(){
                 The Task demo.
             </p>
 
-        </div>
+        </Test>
     )
 }
 
