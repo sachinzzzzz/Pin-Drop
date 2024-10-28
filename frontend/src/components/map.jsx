@@ -19,6 +19,14 @@ function Map() {
 
   const [markers, setMarkers] = useState([
     { id: 1, longitude: 78.042068, latitude: 27.173891, title: 'Taj Mahal', remark: 'Seven Wonders of world.' },
+    { id: 2, longitude: 77.231490, latitude: 28.651950, title: 'Delhi', remark: "India's capital." },
+    { id: 3, longitude: 84.901639, latitude: 22.253275, title: 'NIT RKL', remark: "NIRF rank 19 in 2024." },
+    { id: 4, longitude: 75.970955, latitude: 32.539555, title: 'Dalhousie', remark: "Recommended, greate place for trip in December." },
+    { id: 5, longitude: 88.342785, latitude: 22.544813, title: "Kolkata", remark: "City of Joy, known for its cultural heritage." },
+    { id: 6, longitude: 72.834435, latitude: 18.922003, title: "Mumbai", remark: "Financial capital of India, the 'MAYA NAGAR'." },
+    { id: 7, longitude: 77.59369, latitude: 12.971598, title: "Bangalore", remark: "IT hub of India, known as the Silicon Valley of India." },
+    { id: 8, longitude: 76.641271, latitude: 12.295810, title: "Mysore", remark: "Famous for its palace and Dasara festival." },
+    { id: 9, longitude: 78.486671, latitude: 17.385044, title: "Hyderabad", remark: "The Hydrabadi biryani, a must thing to try." }
   ]);
 
   const [showPopup, setShowPopup] = useState(null);
